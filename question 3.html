@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<title>assignment</title>
+
+<body>
+<script>
+
+function findDublicate()
+{
+    var arr=[1,2,4,5,6,7,8,8,9,10];//if we take 101 element to check,we have to insert values in the array using the loop and externally add an dublicate value
+    var found=0;
+    
+    for(var i=0;i<arr.length;i++)
+    {   
+      if(arr[i]===arr[i+1]){
+      found=arr[i];
+      break;
+    }
+}
+    
+    document.writeln(found);
+    
+}
+findDublicate();
+
+</script>
+
+
+</body>
+</html>

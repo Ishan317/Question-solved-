@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<title>assignment</title>
+
+<body>
+<script>
+
+function findMaxConsecutive()
+{
+    var arr=[0,1,1,1,0,0,0,1,1,1,1,1,0,1,0,1];
+    var count=0;
+    var max=0;
+    document.writeln("The array is: "+arr+"<br/br/>");
+    for(var i=0;i<arr.length;i++)
+    {   
+      if(arr[i]===0)   // checking whether it is 1 or 0
+      count=0;         // reseting count = 0
+      
+      else
+      {
+          count++;
+          if(count>max)   // defining max numbers of consecutive  1's
+            max=count;
+      }
+    }
+    
+    document.writeln("maximum number of ones in array:"+max);
+    
+}
+
+findMaxConsecutive();
+
+</script>
+
+
+</body>
+</html>
